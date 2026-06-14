@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #1f6feb;
+  color: white;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.card.center {
+  text-align: center;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.now-serving {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.token-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f6feb;
+}
+
+.patient-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.big-token {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1f6feb;
+}
+
+.big-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.muted {
+  color: #888;
+}
+
+.muted.small {
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-row input[type="number"] {
+  flex: 0 0 80px;
+}
+
+.form-row button {
+  white-space: nowrap;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #e9eef6;
+  color: #1a1a1a;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #dde6f3;
+}
+
+.btn.primary {
+  background: #1f6feb;
+  color: white;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.btn.primary:hover {
+  background: #1a5fcf;
+}
+
+.btn.primary:disabled {
+  background: #b9c8e6;
+  cursor: not-allowed;
+}
+
+.btn.danger {
+  background: #fbeaea;
+  color: #c0392b;
+}
+
+.btn.danger:hover {
+  background: #f7d6d6;
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+.queue-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.queue-table th,
+.queue-table td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.queue-table th {
+  color: #888;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.error-banner {
+  background: #fbeaea;
+  color: #c0392b;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
